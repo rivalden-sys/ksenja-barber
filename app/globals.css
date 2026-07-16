@@ -40,15 +40,28 @@ button { color: inherit; }
 }
 
 .brand {
-  width: min(100%, 350px);
-  height: 94px;
-  margin: 0 auto 22px;
-  background-image: url('/ksenja-logo.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  display: grid;
+  justify-items: center;
+  margin: 2px auto 28px;
+  line-height: 1;
+  text-align: center;
 }
-.brand > * { display: none !important; }
+.brand strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 9vw, 42px);
+  font-weight: 500;
+  letter-spacing: .14em;
+  color: var(--gold-2);
+  text-shadow: 0 0 28px rgba(210,170,100,.16);
+}
+.brand span {
+  margin-top: 9px;
+  padding-left: .48em;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .48em;
+  color: var(--gold);
+}
 
 .eyebrow { margin-bottom: 10px; text-align: center; color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: .22em; }
 h1 { margin: 0; text-align: center; font: 500 36px/1.08 Georgia, serif; }
@@ -83,6 +96,7 @@ h1 { margin: 0; text-align: center; font: 500 36px/1.08 Georgia, serif; }
 @media (max-width: 380px) {
   .page-shell { padding: 10px; }
   .card { padding: 24px 16px 20px; border-radius: 22px; }
-  .brand { height: 78px; margin-bottom: 18px; }
+  .brand { margin-bottom: 22px; }
+  .brand strong { font-size: 30px; }
   h1 { font-size: 31px; }
 }
