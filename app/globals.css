@@ -39,15 +39,16 @@ button { color: inherit; }
   backdrop-filter: blur(16px);
 }
 
-.brand { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 30px; }
-.brand > div:last-child { display: grid; line-height: 1; }
-.brand strong { font-family: Georgia, serif; font-size: 24px; letter-spacing: .15em; color: var(--gold-2); }
-.brand span { margin-top: 6px; font-size: 10px; letter-spacing: .52em; color: var(--muted); }
-.monogram {
-  display: grid; place-items: center; width: 48px; height: 48px;
-  border: 1px solid var(--gold); border-radius: 50%; color: var(--gold-2);
-  font: italic 30px Georgia, serif;
+.brand {
+  width: min(100%, 330px);
+  height: 92px;
+  margin: 0 auto 24px;
+  background-image: url("data:image/webp;base64,UklGRsBAAABXRUJQVlA4ILRAAADwGgCdASrkAeABPpFIo0ulpCKiIOUAxLQW7hXZFwAQ9/0VAAAA");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+.brand > * { display: none !important; }
 
 .eyebrow { margin-bottom: 10px; text-align: center; color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: .22em; }
 h1 { margin: 0; text-align: center; font: 500 36px/1.08 Georgia, serif; }
@@ -82,5 +83,6 @@ h1 { margin: 0; text-align: center; font: 500 36px/1.08 Georgia, serif; }
 @media (max-width: 380px) {
   .page-shell { padding: 10px; }
   .card { padding: 24px 16px 20px; border-radius: 22px; }
+  .brand { height: 78px; margin-bottom: 20px; }
   h1 { font-size: 31px; }
 }
