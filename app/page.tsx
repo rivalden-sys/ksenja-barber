@@ -117,7 +117,7 @@ export default function Home() {
         <button className="review-helper" onClick={() => setView("review-return")}>
           Wróciłem/am z Booksy
         </button>
-        <p className="micro">KSENJA BARBER · WROCŁAW</p>
+        <p className="micro">KSENIA BARBER · WROCŁAW</p>
       </section>
     </main>
   );
@@ -125,12 +125,9 @@ export default function Home() {
 
 function Brand() {
   return (
-    <div className="brand" aria-label="KSENJA BARBER">
-      <div className="monogram">K</div>
-      <div>
-        <strong>KSENJA</strong>
-        <span>BARBER</span>
-      </div>
+    <div className="brand" aria-label="KSENIA BARBER">
+      <strong>KSENIA</strong>
+      <span>BARBER</span>
     </div>
   );
 }
