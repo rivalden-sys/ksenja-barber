@@ -43,7 +43,7 @@ export default function Home() {
   if (view === "tip") {
     return (
       <main className="page-shell gta-bg">
-        <section className="panel panel-narrow">
+        <section className="panel panel-narrow tip-panel">
           <button className="back" onClick={() => setView("home")} aria-label="Wróć">←</button>
           <Brand />
           <div className="eyebrow">NAPIWEK BLIK</div>
@@ -143,9 +143,9 @@ export default function Home() {
             <small>które budujemy razem</small>
           </div>
           <div className="value-item">
-            <span className="value-icon">♛</span>
-            <strong>TY JESTEŚ</strong>
-            <small>najważniejsza</small>
+            <span className="value-icon">♠</span>
+            <strong>TWÓJ STYL</strong>
+            <small>zawsze na pierwszym planie</small>
           </div>
         </section>
 
